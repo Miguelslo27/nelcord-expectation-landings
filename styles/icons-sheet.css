@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'iconelcord';
+  src:  url(../assets/fonts/iconelcord.eot?40fi62);
+  src:  url(../assets/fonts/iconelcord.eot?40fi62#iefix) format('embedded-opentype'),
+    url(../assets/fonts/iconelcord.ttf?40fi62) format('truetype'),
+    url(../assets/fonts/iconelcord.woff?40fi62) format('woff'),
+    url(../assets/fonts/iconelcord.svg?40fi62#iconelcord) format('svg');
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconelcord' !important;
+  speak: never;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e910";
+}
+.icon-User-rotation:before {
+  content: "\e900";
+}
+.icon-Savings:before {
+  content: "\e901";
+}
+.icon-Picture:before {
+  content: "\e902";
+}
+.icon-Phone:before {
+  content: "\e903";
+}
+.icon-Nelcord:before {
+  content: "\e904";
+}
+.icon-Location:before {
+  content: "\e905";
+}
+.icon-Life:before {
+  content: "\e906";
+}
+.icon-Hi5:before {
+  content: "\e907";
+}
+.icon-Health:before {
+  content: "\e908";
+}
+.icon-File-download:before {
+  content: "\e909";
+}
+.icon-Envelop:before {
+  content: "\e90a";
+}
+.icon-Currency-point:before {
+  content: "\e90b";
+}
+.icon-Chat:before {
+  content: "\e90c";
+}
+.icon-Business-man:before {
+  content: "\e90d";
+}
+.icon-Badge:before {
+  content: "\e90e";
+}
+.icon-Arrow:before {
+  content: "\e90f";
+}
