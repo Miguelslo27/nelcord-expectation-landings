@@ -45,6 +45,7 @@ i {
   position: relative;
   font-size: 2.5rem;
   text-transform: uppercase;
+  white-space: nowrap;
   margin-bottom: 1.625rem;
 }
 
@@ -112,10 +113,48 @@ i {
   text-align: center;
   letter-spacing: .1rem;
   line-height: 1.25;
-  width: 40rem;
+  max-width: 40rem;
+  width: 95%;
 }
 
 .expectation h3 > strong {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  .expectation h1 {
+    width: min-content;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .expectation h1 > .green {
+    letter-spacing: .07rem;
+  }
+
+  .expectation h1 > i {
+    top: -3.5rem;
+    right: -3.3rem;
+  }
+
+  .expectation h2 {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .expectation h1,
+  .expectation h2,
+  .expectation h3 {
+    transform: scale(.8);
+  }
+
+  .expectation h1 {
+    margin-bottom: calc(1.625rem * .8);
+  }
+
+  .expectation h2 {
+    margin-bottom: calc(5rem * .5);
+  }
 }
