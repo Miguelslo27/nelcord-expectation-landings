@@ -14,6 +14,11 @@ body {
   padding: 0;
 }
 
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
 i {
   font-weight: 400 !important;
 }
@@ -21,6 +26,7 @@ i {
 dl {
   margin: 0;
   padding: 0;
+  line-height: 1.5em;
 }
 dl dt {
   font-weight: bold;
@@ -34,6 +40,56 @@ dl dd {
   padding-bottom: 2rem;
   margin-bottom: 2em;
   border-bottom: 1px solid var(--gray);
+}
+
+.hero {
+  height: 30rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-shadow:
+    0px 0px 10px rgba(0,0,0,.25),
+    0px 0px 20px rgba(0,0,0,.25),
+    0px 0px 30px rgba(0,0,0,.25),
+    0px 0px 40px rgba(0,0,0,.25),
+    0px 0px 50px rgba(0,0,0,.25),
+    0px 0px 60px rgba(0,0,0,.2),
+    0px 0px 70px rgba(0,0,0,.2),
+    0px 0px 80px rgba(0,0,0,.2),
+    0px 0px 90px rgba(0,0,0,.2),
+    0px 0px 100px rgba(0,0,0,.2),
+    0px 0px 110px rgba(0,0,0,.15),
+    0px 0px 120px rgba(0,0,0,.15),
+    0px 0px 130px rgba(0,0,0,.15),
+    0px 0px 140px rgba(0,0,0,.15),
+    0px 0px 150px rgba(0,0,0,.15),
+    0px 0px 170px rgba(0,0,0,.1),
+    0px 0px 180px rgba(0,0,0,.1),
+    0px 0px 190px rgba(0,0,0,.1),
+    0px 0px 200px rgba(0,0,0,.1);
+  width: 45%;
+}
+
+.program h1 {
+  width: 55%;
+}
+
+.hero-bg {
+  background-size: 120%;
+  background-position:  center bottom;
+}
+
+.frequent-questions-bg {
+  background-image: url(../assets/images/woman.jpg);
+}
+.we-value-your-effort-bg {
+  background-image: url(../assets/images/work-office.JPG);
+  background-position-y: center;
+}
+.we-reward-your-results-bg {
+  background-image: url(../assets/images/friends-having-fun.jpg);
 }
 
 .container {
@@ -118,17 +174,15 @@ dl dd {
   color: #52AE32;
 }
 
-header {
-  height: 30rem;
-  background-image: url(../assets/images/woman.jpg);
-  background-size: 120%;
-  background-position:  center bottom;
-}
-
-header h1 {
-  font-size: 3.5rem;
+.button {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+  background-image: radial-gradient(ellipse at bottom left, #004936 0%, #009145 100%);
+  color: white;
+  font-weight: 600;
   text-transform: uppercase;
-  width: 40%;
+  text-decoration: none;
+  border-radius: .5rem;
 }
 
 footer {
@@ -298,3 +352,4 @@ footer {
     margin-bottom: calc(5rem * .5);
   }
 }
+
