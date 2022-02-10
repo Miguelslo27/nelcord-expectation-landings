@@ -101,6 +101,16 @@ dl dd {
     url(../assets/images/happy-smiling-woman.jpg);
   background-position-y: center;
 }
+.active-campaings-bg {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/images/working-desktop.jpg);
+  background-position-y: center;
+}
 
 .container {
   max-width: 1024px;
