@@ -73,22 +73,32 @@ dl dd {
 }
 .we-value-your-effort-bg {
   background-image:
-  linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ),
-    url(../assets/images/work-office.JPG);
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/images/work-office.jpg);
   background-position-y: center;
 }
 .we-reward-your-results-bg {
   background-image:
-  linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
     url(../assets/images/friends-having-fun.jpg);
+  background-position-y: center;
+}
+.contact-bg {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/images/happy-smiling-woman.jpg);
   background-position-y: center;
 }
 
