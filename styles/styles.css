@@ -49,26 +49,7 @@ dl dd {
 .hero h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
-  text-shadow:
-    0px 0px 10px rgba(0,0,0,.25),
-    0px 0px 20px rgba(0,0,0,.25),
-    0px 0px 30px rgba(0,0,0,.25),
-    0px 0px 40px rgba(0,0,0,.25),
-    0px 0px 50px rgba(0,0,0,.25),
-    0px 0px 60px rgba(0,0,0,.2),
-    0px 0px 70px rgba(0,0,0,.2),
-    0px 0px 80px rgba(0,0,0,.2),
-    0px 0px 90px rgba(0,0,0,.2),
-    0px 0px 100px rgba(0,0,0,.2),
-    0px 0px 110px rgba(0,0,0,.15),
-    0px 0px 120px rgba(0,0,0,.15),
-    0px 0px 130px rgba(0,0,0,.15),
-    0px 0px 140px rgba(0,0,0,.15),
-    0px 0px 150px rgba(0,0,0,.15),
-    0px 0px 170px rgba(0,0,0,.1),
-    0px 0px 180px rgba(0,0,0,.1),
-    0px 0px 190px rgba(0,0,0,.1),
-    0px 0px 200px rgba(0,0,0,.1);
+  text-shadow: 0px 0px 35px rgb(0,0,0);
   width: 45%;
 }
 
@@ -82,14 +63,33 @@ dl dd {
 }
 
 .frequent-questions-bg {
-  background-image: url(../assets/images/woman.jpg);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/images/woman.jpg);
 }
 .we-value-your-effort-bg {
-  background-image: url(../assets/images/work-office.JPG);
+  background-image:
+  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+    url(../assets/images/work-office.JPG);
   background-position-y: center;
 }
 .we-reward-your-results-bg {
-  background-image: url(../assets/images/friends-having-fun.jpg);
+  background-image:
+  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ),
+    url(../assets/images/friends-having-fun.jpg);
+  background-position-y: center;
 }
 
 .container {
@@ -353,3 +353,24 @@ footer {
   }
 }
 
+.slideshow {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 2s ease;
+}
+.slide.active {
+  opacity: 1;
+}
+.slide.active-in {
+  opacity: 1;
+}
+.slide.active-out {
+  opacity: 0;
+}
