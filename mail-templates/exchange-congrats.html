@@ -5,7 +5,7 @@
   xmlns:o="urn:schemas-microsoft-com:office:office"
 >
 <header>
-  <title>Bienvenido</title>
+  <title>Acreditación De Puntos</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
@@ -59,11 +59,11 @@
                 width="100%"
                 height="465"
                 bgcolor="#CCC"
-                background="./assets/welcome.png"
+                background="./assets/exchange-congrats.png"
                 style="
                   width: 100%;
                   height: 465px;
-                  background-image: url(./assets/welcome.png);
+                  background-image: url(./assets/exchange-congrats.png);
                   background-size: cover;
                   background-position: center;
                   background-repeat: no-repeat;
@@ -85,27 +85,50 @@
           <!-- Body row -->
           <tr>
             <td style="
-              padding: 2rem 5rem;
+              padding: 2rem;
               font-size: 1.2rem;
               line-height: 2.5rem;
             ">
-              <img
-                style="
-                  margin-left: 1.8rem;
-                "
-                src="./assets/nelcord-benefits-logo.png" alt="Nelcord Benefits">
               <p style="
                 margin-bottom: 2rem;
               ">
-                A partir de ahora podés acumular puntos cumpliendo tus<br>objetivos de ventas
+                Tu canje de
+                <em style="
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                  font-style: normal;
+                  color: #52AC32;
+                ">{{ PRODUCTO.NOMBRE }}</em>
+                <br>
+                se ha registrado con éxito
+                <br>
+                <em style="
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  font-style: normal;
+                ">{{ producto.indicacionesEntrega }}</em>
               </p>
 
-              <p style="
-                margin-bottom: 2rem;
-              ">
-                En
-                <em style="font-style: normal;"><strong style="font-size: bold;">NELCORD</strong> <strong style="font-size: bold; color: #52AC32;">BENEFITS</strong></em>
-                podrás encontrar campañas con objetivos de ventas y con el cumplimiento de estos objetivos sumás puntos que podrás canjear por artículos de tecnología o del hogar, moda y experiencias únicas.
+              <p style="line-height: 1.2rem;">
+                <strong>DETALLES DE TU CANJE:</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                Usuario: <strong>{{ usuario.username }}</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                Producto: <strong>{{ producto.nombre }}</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                Puntos Canjeados: <strong>{{ canje.puntos }}</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                Fecha de canje: <strong>{{ canje.fecha }}</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                Saldo de Puntos: <strong>{{ usuario.saldo }}</strong>
+              </p>
+              <p style="line-height: 1.2rem;">
+                ID de canje: <strong>{{ canje.id }}</strong>
               </p>
             </td>
           </tr>
@@ -113,14 +136,11 @@
             <td style="
               background-color: #E2E2E2;
               padding: 1.5rem 2rem;
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: #52AC32;
             ">
-              <p style="margin-bottom: .5rem;">Accedé por primera vez y te regalamos</p>
-              <p style="
-                margin-top: 0;
-                font-size: 1.8rem;
-                font-weight: bold;
-                color: #52AC32;
-              ">500 PUNTOS EXTRA</p>
+              <p>¡QUE LO DISFRUTES!</p>
             </td>
           </tr>
           <!-- Footer row -->
@@ -136,9 +156,15 @@
                   font-weight: 600;
                   text-decoration: none;
                   border-radius: .5rem;
+                  margin-bottom: 1rem;
                 "
-                href="#">COMENZÁ A SUMAR PUNTOS</a>
+                href="#">VER MÁS PRODUCTOS</a>
               </p>
+              <img
+                style="
+                  margin-left: 1.8rem;
+                "
+                src="http://127.0.0.1:8080/mail-templates/assets/nelcord-benefits-logo.png" alt="Nelcord Benefits">
               <p>
                 Por consultas, comunicarse a info@nelcord.com.uy
               </p>
@@ -151,7 +177,7 @@
                   width: 100%;
                   max-width: 800px;
                 "
-                src="./assets/border-green-gradient.png">
+                src="http://127.0.0.1:8080/mail-templates/assets/border-green-gradient.png">
             </td>
           </tr>
         </table>
