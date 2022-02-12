@@ -1,0 +1,163 @@
+<!doctype html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+<header>
+  <title>Recuperar usuario</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</header>
+<body>
+  <!-- Email template container-->
+  <table
+    border="0"
+    cellpadding="0"
+    height="100"
+    width="100%"
+  >
+    <tr>
+      <td
+        align="center"
+        valign="top"
+        style="
+          margin: auto;
+          vertical-align: top;
+        "
+      >
+        <!-- Email content -->
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          width="800"
+          align="center"
+          style="
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            vertical-align: top;
+            border: 1px solid #E2E2E2;
+            text-align: center;
+            font-family: Montserrat;
+            color: #636362;
+          "
+        >
+          <!-- Header row -->
+          <tr>
+            <td>
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+                height="465"
+                bgcolor="#CCC"
+                background="./assets/recovery.png"
+                style="
+                  width: 100%;
+                  height: 465px;
+                  background-image: url(./assets/recovery.png);
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                "
+              >
+                <tr>
+                  <td style="vertical-align: bottom;">
+                    <h1 style="
+                      font-size: 2.5rem;
+                      color: white;
+                      text-align: center;
+                      margin-bottom: 6rem;
+                    ">¡HOLA {{ PERFIL.NOMBRE }}<br>{{ PERFIL.APELLIDO }}!</h1>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Body row -->
+          <tr>
+            <td style="
+              padding: 2rem;
+              font-size: 1.2rem;
+              line-height: 2.5rem;
+            ">
+              <p style="
+                margin-bottom: 2rem;
+                font-size: 1.6rem;
+                font-weight: bold;
+              ">
+                ¿Olvidaste tu usuario de
+                <em style="font-style: normal;">
+                  <strong style="font-size: bold;">NELCORD</strong>
+                  <strong style="font-size: bold; color: #52AC32;">BENEFITS</strong>
+                </em>?
+              </p>
+              <p style="margin-bottom: 0;">
+                Te lo recordamos:<br>
+                <strong style="
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  font-style: normal;
+                ">
+                  Usuario: {{ usuario.username }}
+                </strong>
+              </p>
+              <hr style="width: 80%;">
+              <p style="margin-bottom: 0;">
+                Recordá que siempre podrás acceder con tu DNI o CI
+                (sin espacios ni guiones) como usuario.
+              </p>
+              <p style="font-size: 1rem;">
+                <strong>¿No solicitaste este mail?</strong> Escribínos a info@nelcord.com.uy
+                No divulgues ni compartas tu información personal con nadie.
+              </p>
+              <p>
+                <a style="
+                  display: inline-block;
+                  padding: 1rem 2rem;
+                  background-image: radial-gradient(ellipse at bottom left, #004936 0%, #009145 100%);
+                  color: white;
+                  font-size: 1.5rem;
+                  font-weight: 600;
+                  text-decoration: none;
+                  border-radius: .5rem;
+                  margin-bottom: 1rem;
+                "
+                href="#">INGRESÁ AHORA</a>
+              </p>
+              <img
+                style="
+                  margin-left: 1.8rem;
+                "
+                src="./assets/nelcord-benefits-logo.png" alt="Nelcord Benefits">
+              <p>
+                Por consultas, comunicarse a info@nelcord.com.uy
+              </p>
+            </td>
+          </tr>
+          <!-- Footer row -->
+          <tr>
+            <td>
+              <img
+                style="
+                  width: 100%;
+                  max-width: 800px;
+                "
+                src="./assets/border-green-gradient.png">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- Here we will add further content -->
+</body>
+</html>
