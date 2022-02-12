@@ -5,7 +5,7 @@
   xmlns:o="urn:schemas-microsoft-com:office:office"
 >
 <header>
-  <title>Acreditación De Puntos</title>
+  <title>Canje De Puntos</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
@@ -59,11 +59,11 @@
                 width="100%"
                 height="465"
                 bgcolor="#CCC"
-                background="./assets/exchange-congrats.png"
+                background="./assets/expiration.png"
                 style="
                   width: 100%;
                   height: 465px;
-                  background-image: url(./assets/exchange-congrats.png);
+                  background-image: url(./assets/expiration.png);
                   background-size: cover;
                   background-position: center;
                   background-repeat: no-repeat;
@@ -76,7 +76,7 @@
                       color: white;
                       text-align: center;
                       margin-bottom: 6rem;
-                    ">¡FELICITACIONES<br>{{ PERFIL.NOMBRE }}!</h1>
+                    ">¡HOLA<br>{{ PERFIL.NOMBRE }}!</h1>
                   </td>
                 </tr>
               </table>
@@ -85,49 +85,21 @@
           <!-- Body row -->
           <tr>
             <td style="
-              padding: 2rem 9rem;
+              padding: 2rem 8rem;
               font-size: 1.2rem;
               line-height: 2.5rem;
             ">
               <p style="
                 margin-bottom: 2rem;
               ">
-                Tu canje de
-                <em style="
-                  font-size: 1.8rem;
-                  font-weight: bold;
-                  font-style: normal;
-                  color: #52AC32;
-                ">{{ PRODUCTO.NOMBRE }}</em>
-                se ha registrado con éxito
-                <br>
-                <em style="
-                  font-size: 1.6rem;
-                  font-weight: bold;
-                  font-style: normal;
-                ">{{ producto.indicacionesEntrega }}</em>
+                En <strong>30 días</strong> vencerán tus puntos, ya que se cumplen los 18 meses de haber sido acreditados.
               </p>
 
-              <p style="line-height: 1.2rem;">
-                <strong>DETALLES DE TU CANJE:</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                Usuario: <strong>{{ usuario.username }}</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                Producto: <strong>{{ producto.nombre }}</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                Puntos Canjeados: <strong>{{ canje.puntos }}</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                Fecha de canje: <strong>{{ canje.fecha }}</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                Saldo de Puntos: <strong>{{ usuario.saldo }}</strong>
-              </p>
-              <p style="line-height: 1.2rem;">
-                ID de canje: <strong>{{ canje.id }}</strong>
+              <p style="
+                margin-bottom: 2rem;
+              ">
+                Fecha de vencimiento: <strong>{{ usuario.vencimientoFecha }}</strong><br>
+                Puntos por vencer: <strong>{{ usuario.vencimientoPuntos }}</strong>
               </p>
             </td>
           </tr>
@@ -139,7 +111,7 @@
               font-weight: bold;
               color: #52AC32;
             ">
-              <p>¡QUE LO DISFRUTES!</p>
+              <p>¡ACCEDÉ AHORA Y DISFRUTÁ!</p>
             </td>
           </tr>
           <!-- Footer row -->
@@ -157,7 +129,7 @@
                   border-radius: .5rem;
                   margin-bottom: 1rem;
                 "
-                href="#">VER MÁS PRODUCTOS</a>
+                href="#">CANJEÁ TUS PUNTOS</a>
               </p>
               <img
                 style="
